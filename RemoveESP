@@ -1,5 +1,5 @@
 for i, v in pairs(workspace:GetDescendants()) do
 if v.Name == "ESPPart" then
-v.Destroy
+v:Destroy()
 end
 end
