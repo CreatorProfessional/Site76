@@ -14,6 +14,9 @@ end
 for i, v in pairs(workspace:GetDescendants()) do
 if v.Name == "KeycardModel" then
 if v:FindFirstChild("Part") then
+if v.Part:FindFirstChild("ESPPart") then
+v.Part.ESPPart:Destroy()
+end
 CreateESPPart(v.Part, Color3.fromRGB(0,255,255))
 end
 end
